@@ -3,7 +3,7 @@
 dirl=("arc" "aud" "dev" "doc" "img" "vid")
 
 arc=("7z" "apk" "bz2" "gz" "rar" "tar" "tar.bzip" "tar.gz" "tgz" "zip" "zipx")
-aud=("mp3" "ogg" "wav" "flac" "opus" "aac" "wma" "m4a" "mp2")
+aud=("mp3" "ogg" "wav" "flac" "opus" "aac" "wma" "m4a" "mp2" "pcm" "alac" "aiff" "m4p")
 dev=("bas" "c" "cpp" "css" "js" "h" "htm" "html" "php" "sh" "o" "p" "pl" "py" "pyc")
 doc=("csv" "doc" "docx" "docm" "eps" "otd" "pdf" "ppt" "pptx" "pptm" "ps" "txt" "xls" "xlsm" "xlsx")
 img=("bmp" "jpg" "jpeg" "png" "tiff" "gif" "webp" "mj2" "mjp2" "svg")
