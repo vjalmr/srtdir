@@ -1,0 +1,21 @@
+#!/bin/bash
+
+dirl=("arc" "aud" "dev" "doc" "img" "vid")
+
+arc=("7z" "apk" "bz2" "gz" "rar" "tar" "tar.bzip" "tar.gz" "tgz" "zip" "zipx")
+aud=("mp3" "ogg" "wav" "flac" "opus" "aac" "wma" "m4a" "mp2")
+dev=("bas" "c" "cpp" "css" "js" "h" "htm" "html" "php" "sh" "o" "p" "pl" "py" "pyc")
+doc=("csv" "doc" "docx" "docm" "eps" "otd" "pdf" "ppt" "pptx" "pptm" "ps" "txt" "xls" "xlsm" "xlsx")
+img=("bmp" "jpg" "jpeg" "png" "tiff" "gif" "webp" "mj2" "mjp2" "svg")
+vid=("mp4" "mov" "mkv" "webm" "m2t" "ts" "tsa" "tsv" "m4v" "avi")
+
+for dir in ${dirl[@]}; do
+        mkdir -p $dir;
+        arr=$dir[@]
+        arr=("${!arr}")
+        for ft in ${arr[@]}; do
+                if [[ `find . -maxdepth 1 -iname *.$ft -type f | wc -l` -gt 0 ]]; then
+                        mv *.$ft $dir;
+                fi
+        done
+done
